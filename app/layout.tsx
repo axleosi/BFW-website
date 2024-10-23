@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import {Updock} from '@next/font/google'
+
+const updock = Updock({
+  weight: "400",
+  subsets: ["latin"]
+});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,7 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={updock.className}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
