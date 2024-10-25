@@ -37,6 +37,18 @@
         border-radius: 10px;
         text-align: center;
     }
+    .sCon{
+        background-image: url(/hero.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+        border-radius: 5px;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .text span{
         font-size: 27px;
     }

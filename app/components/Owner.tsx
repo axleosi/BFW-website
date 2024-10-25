@@ -18,7 +18,6 @@ const Owner = () => {
                 </div>
             </div>
             <div className={styles.owner}>
-                
             </div>
         </div>
     </div>

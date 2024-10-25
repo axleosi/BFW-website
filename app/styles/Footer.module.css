@@ -1,0 +1,51 @@
+.con{
+    margin-top: 30px;
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.con p{
+    color: white;
+}
+.image{
+    filter: brightness(0) invert(1);
+}
+.imageMCon{
+    padding-top: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+}
+.indLink{
+    display: flex;
+    gap: 10px;
+}
+.whatsapp{
+    display: flex;
+    gap: 10px;
+}
+.link{
+    color: white;
+}
+.imageCon{
+    display: flex;
+    gap: 10px;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}

@@ -4,7 +4,7 @@ import Owner from "./components/Owner";
 
 export default function Home() {
   return (
-    <div>
+    <div className="homepage">
       <Hero/>
       <Owner/>
     </div>

@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import {Updock} from '@next/font/google'
+import Footer from "./components/Footer";
 
 const updock = Updock({
   weight: "400",
@@ -35,8 +36,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar/>
-        {children}
+          <Navbar/>
+          {children}
+          <Footer/>
       </body>
     </html>
   );
