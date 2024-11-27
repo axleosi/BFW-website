@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Hero from "./components/Hero";
-import Owner from "./components/Owner";
+import Value from "./components/Value";
 
 export default function Home() {
   return (
     <div className="homepage">
       <Hero/>
-      <Owner/>
+      <Value/>
     </div>
   );
 }
