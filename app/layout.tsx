@@ -64,7 +64,9 @@ export default function RootLayout({
           {children}
           <Footer/>
 
-          <Script strategy="afterInteractive" 
+          <Script 
+          id="emailjs-script"
+          strategy="afterInteractive" 
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
           </Script>
       </body>

@@ -1,7 +1,11 @@
 import React from 'react'
 import styles from '../styles/Contact.module.css'
-import Map from '../components/Map'
+import dynamic from 'next/dynamic'
 import Form from '../components/Form'
+
+const Map = dynamic(() => import('../components/Map'), {
+  ssr: false, // Disable server-side rendering for the Map component
+})
 
 const Contact = () => {
   return (

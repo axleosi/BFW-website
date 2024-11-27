@@ -1,14 +1,24 @@
 'use client'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import 'leaflet/dist/leaflet.css';
 import styles from '../styles/Map.module.css'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 import { Icon } from 'leaflet';
 
 
 
 
 const Map = () => {
+  const [isClient, setIsClient] = useState(false);  // State to track if we're on the client-side
+
+  useEffect(() => {
+    // Set isClient to true only on the client-side
+    setIsClient(true);
+  }, []);
+
+  if (!isClient) {
+    return <div>Loading map...</div>;  // Optionally, display a loading state while waiting for client-side render
+  }
   const customIcon=new Icon({
     iconUrl:'https://cdn-icons-png.flaticon.com/128/684/684908.png',
     iconSize:[38,38]

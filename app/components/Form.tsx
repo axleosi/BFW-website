@@ -1,6 +1,6 @@
 "use client"
-import React from 'react'
-import {Formik, useFormik } from 'formik';
+import React, { useState, useEffect } from 'react'
+import {useFormik } from 'formik';
 import * as Yup from 'yup';
 import styles from '../styles/Form.module.css'
 import emailjs from '@emailjs/browser';
@@ -16,6 +16,8 @@ interface EmailParams {
 }
 
 const Form = () => {
+    const [isClient, setIsClient] = useState(false);
+
     const formik=useFormik({
         initialValues:{
             fname:'',
@@ -36,7 +38,16 @@ const Form = () => {
           }
     })
 
-    const sendMail = (params:EmailParams) => {
+    useEffect(() => {
+        setIsClient(true);
+      }, []);
+    
+      // Don't render the form until we're sure we're on the client-side
+      if (!isClient) {
+        return null; // Optionally, render a loading spinner or message while waiting for client-side rendering
+      }
+
+      const sendMail = (params:EmailParams) => {
         const emailParams = {
             name: `${params.fname} ${params.lname}`,
             email: params.email,
