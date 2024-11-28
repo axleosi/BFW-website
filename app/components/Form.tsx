@@ -74,11 +74,12 @@ const Form = () => {
             <div className={styles.formInd}>
                 <label htmlFor='fname'>First Name*</label>
                 <input 
+                    className={styles.input}
                     type='text' 
                     id='fname' 
                     name='fname' 
                     value={formik.values.fname} 
-                    placeholder='Please fill in your name' 
+                    placeholder='Please fill in your first name' 
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     aria-describedby={formik.touched.fname && formik.errors.fname ? 'fname-error' : undefined}
@@ -92,10 +93,11 @@ const Form = () => {
                 <label htmlFor='lname'>Last Name*</label>
                 <input 
                     type='text' 
+                    className={styles.input}
                     id='lname' 
                     name='lname' 
                     value={formik.values.lname} 
-                    placeholder='Please fill in your name' 
+                    placeholder='Please fill in your last name' 
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     aria-describedby={formik.touched.lname && formik.errors.lname ? 'lname-error' : undefined}
@@ -110,6 +112,7 @@ const Form = () => {
                 <input 
                     type='email' 
                     id='email' 
+                    className={styles.input}
                     name='email' 
                     value={formik.values.email} 
                     placeholder='Please fill in your Email' 
@@ -127,6 +130,7 @@ const Form = () => {
                 <input 
                     type='tel' 
                     id='phone' 
+                    className={styles.input}
                     name='phone' 
                     value={formik.values.phone} 
                     placeholder='Please fill in your Phone Number' 
@@ -144,6 +148,7 @@ const Form = () => {
                 <textarea 
                     id='description' 
                     name='description' 
+                    className={styles.input}
                     value={formik.values.description} 
                     placeholder='Describe your needs' 
                     onChange={formik.handleChange}

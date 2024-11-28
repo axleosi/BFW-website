@@ -8,6 +8,16 @@
 }
 .con h3{
     font-size: 25px;
+    color: black;
+}
+.con label{
+    color: black;
+}
+.con p{
+    color: black;
+}
+.input{
+    color: black;
 }
 .formCon{
     width: 100%;
