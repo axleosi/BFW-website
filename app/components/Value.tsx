@@ -10,7 +10,7 @@ const Value = () => {
         </div>
         <div className={styles.card}>
             <h1>Vision Statement</h1>
-            <p>Our vision is to be a leading provider of custom-made shoes thatcombine comfort, functionality and style. We aspire to create a brand that is synonymous with quality and craftmanship, providing customers with a unique and personalized experience. We aim to grow our business by expanding our product line and reaching new markets, while maintaining our commitment to excellence and customer satisfaction.</p>
+            <p>Our vision is to be a leading provider of custom-made shoes that combine comfort, functionality and style. We aspire to create a brand that is synonymous with quality and craftmanship, providing customers with a unique and personalized experience. We aim to grow our business by expanding our product line and reaching new markets, while maintaining our commitment to excellence and customer satisfaction.</p>
         </div>
         <h1>CORE VALUES</h1>
         <div className={styles.card}>

@@ -7,7 +7,7 @@ const Hero = () => {
         <div className={styles.sCon}>
             <div className={styles.text}>
                 <h1>WELCOME TO <span>B.F.W</span></h1>
-                <p>Home of the highest quality footwear that meets the unique needs and preference of our customers. We strrive to provide exceptional customer servicce, using only the finest materials and traditional techniques to create shoe that are comfortable and stylish.</p>
+                <p>Home of the highest quality footwear that meets the unique needs and preference of our customers. We strive to provide exceptional customer service, using only the finest materials and traditional techniques to create shoe that are comfortable and stylish.</p>
             </div>
         </div>
     </div>
